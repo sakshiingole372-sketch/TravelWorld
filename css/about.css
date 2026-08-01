@@ -1,0 +1,461 @@
+/* ===============================
+   ABOUT PAGE
+=============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fbff;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+section{
+    padding:80px 8%;
+}
+
+/* ===============================
+   Navbar
+=============================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo h2{
+    color:#fff;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:#fff;
+    font-weight:500;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#ffd60a;
+}
+
+.btn{
+    padding:12px 28px;
+    background:#00b4d8;
+    color:#fff;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0077b6;
+}
+
+/* ===============================
+   Banner
+=============================== */
+
+.about-banner{
+    height:60vh;
+    background:url("../images/about.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.about-banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+
+.banner-content{
+    position:relative;
+    text-align:center;
+    color:#fff;
+}
+
+.banner-content h1{
+    font-size:55px;
+}
+
+.banner-content p{
+    font-size:20px;
+    margin-top:15px;
+}
+
+/* ===============================
+   About Section
+=============================== */
+
+.about-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image img{
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.about-text h2{
+    font-size:40px;
+    color:#0d3b66;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.8;
+    color:#666;
+    margin-bottom:20px;
+}
+
+/* ===============================
+   Mission & Vision
+=============================== */
+
+.mission{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+    background:#eef7ff;
+}
+
+.mission-box{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.mission-box i{
+    font-size:60px;
+    color:#00b4d8;
+    margin-bottom:20px;
+}
+
+.mission-box h2{
+    color:#0d3b66;
+    margin-bottom:15px;
+}
+
+.mission-box p{
+    color:#666;
+    line-height:1.8;
+}
+
+.mission-box:hover{
+    transform:translateY(-10px);
+}
+
+/* ===============================
+   Why Choose Us
+=============================== */
+
+.choose{
+    background:#fff;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#0d3b66;
+    margin-bottom:50px;
+}
+
+.choose-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.choose-card{
+    background:#fff;
+    text-align:center;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.choose-card i{
+    font-size:50px;
+    color:#00b4d8;
+    margin-bottom:20px;
+}
+
+.choose-card h3{
+    color:#0d3b66;
+    margin-bottom:15px;
+}
+
+.choose-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+.choose-card:hover{
+    background:#00b4d8;
+    transform:translateY(-10px);
+}
+
+.choose-card:hover i,
+.choose-card:hover h3,
+.choose-card:hover p{
+    color:#fff;
+}
+
+/* ===============================
+   Team
+=============================== */
+
+.team{
+    background:#f8fbff;
+}
+
+.team-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.team-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.team-card img{
+    height:300px;
+    object-fit:cover;
+}
+
+.team-card h3{
+    margin-top:20px;
+    color:#0d3b66;
+}
+
+.team-card p{
+    color:#666;
+    padding-bottom:25px;
+}
+
+.team-card:hover{
+    transform:translateY(-10px);
+}
+
+/* ===============================
+   Statistics
+=============================== */
+
+.stats{
+    background:linear-gradient(135deg,#0077b6,#00b4d8);
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.stat-box{
+    color:#fff;
+    padding:40px 20px;
+}
+
+.stat-box h2{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+}
+
+/* ===============================
+   Footer
+=============================== */
+
+footer{
+    background:#0d1b2a;
+    color:#fff;
+    padding:70px 8% 20px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    margin-bottom:20px;
+}
+
+.footer-box p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.footer-box a{
+    display:block;
+    color:#ddd;
+    margin:10px 0;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    color:#00b4d8;
+    padding-left:8px;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.2);
+    text-align:center;
+    padding-top:20px;
+    color:#bbb;
+}
+
+/* ===============================
+   Animations
+=============================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.about-image,
+.about-text,
+.mission-box,
+.choose-card,
+.team-card,
+.stat-box{
+    animation:fadeUp .8s ease;
+}
+
+/* ===============================
+   Responsive
+=============================== */
+
+@media(max-width:992px){
+
+.about-section{
+    grid-template-columns:1fr;
+}
+
+.banner-content h1{
+    font-size:42px;
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+    padding:60px 20px;
+}
+
+.banner-content h1{
+    font-size:34px;
+}
+
+.banner-content p{
+    font-size:16px;
+}
+
+.section-title{
+    font-size:30px;
+}
+
+.stats{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:480px){
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.team-card img{
+    height:250px;
+}
+
+.about-text h2{
+    font-size:30px;
+}
+
+.about-text p{
+    font-size:15px;
+}
+
+.btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}
+
+}
+
